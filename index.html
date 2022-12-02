@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <title>List</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+   <div class="container">
+    <h1 class="title">Test</h1>
+    <form class="form">
+        <label class="label">
+            Name/Value pair
+            <input required class="input" pattern="[А-Яа-яA-Za-z0-9]{1,}[\s]{0,}=[\s]{0,}[А-Яа-яA-Za-z0-9]{1,}" name="text" type="text">
+        </label>
+        <button type="submit" class="button add__button">Add</button>
+        <div class="wrapper">
+          <ul class="list">
+          </ul>
+          <p class="xml is-hidden"></p>
+          <div class="buttons">
+            <button type="button" class=" button delete_button">Delete all</button>
+            <button type="button" class="button sort_name_button">Sort by Name</button>
+            <button type="button" class=" button sort_value_button">Sort by Value</button>
+            <button type="button" class="button show_xml_button" disabled>Show XML</button>
+            <button type="button" class="button show_list_button is-hidden" >Show list</button>
+          </div>
+        </div>
+    </form>
+   </div>
+   <script src="./js/main.js" type="module"></script>
+   <script src="./js/refs.js" type="module"></script>
+  </body>
+</html>
